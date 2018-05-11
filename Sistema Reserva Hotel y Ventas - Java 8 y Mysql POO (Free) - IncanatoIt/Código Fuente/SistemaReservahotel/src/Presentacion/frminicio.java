@@ -36,6 +36,9 @@ public class frminicio extends javax.swing.JFrame {
         lblapaterno = new javax.swing.JLabel();
         lblamaterno = new javax.swing.JLabel();
         lblacceso = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblidpersona1 = new javax.swing.JLabel();
+        lblidpersona2 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         mnusisreserva = new javax.swing.JMenu();
         mnuarchivo = new javax.swing.JMenu();
@@ -44,51 +47,77 @@ public class frminicio extends javax.swing.JFrame {
         mnureservas = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
         mnuconfiguraciones = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         mnusalir = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        escritorio.setBackground(new java.awt.Color(102, 255, 255));
+        escritorio.setBackground(new java.awt.Color(255, 255, 255));
 
         lblidpersona.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblidpersona.setText("jLabel1");
         escritorio.add(lblidpersona);
-        lblidpersona.setBounds(0, 0, 130, 16);
+        lblidpersona.setBounds(160, 390, 130, 16);
 
         lblnombre.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblnombre.setText("jLabel2");
         escritorio.add(lblnombre);
-        lblnombre.setBounds(60, 0, 130, 16);
+        lblnombre.setBounds(100, 360, 130, 16);
 
         lblapaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblapaterno.setText("jLabel3");
         escritorio.add(lblapaterno);
-        lblapaterno.setBounds(60, 20, 130, 16);
+        lblapaterno.setBounds(60, 380, 130, 16);
 
         lblamaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblamaterno.setText("jLabel4");
         escritorio.add(lblamaterno);
-        lblamaterno.setBounds(60, 40, 130, 16);
+        lblamaterno.setBounds(60, 400, 130, 16);
 
         lblacceso.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblacceso.setText("jLabel7");
         escritorio.add(lblacceso);
-        lblacceso.setBounds(60, 60, 130, 16);
+        lblacceso.setBounds(60, 420, 130, 16);
 
-        mnusisreserva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Inicio.png"))); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/fondo3.jpg"))); // NOI18N
+        escritorio.add(jLabel1);
+        jLabel1.setBounds(0, 0, 920, 490);
+
+        lblidpersona1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblidpersona1.setText("jLabel1");
+        escritorio.add(lblidpersona1);
+        lblidpersona1.setBounds(0, 360, 130, 16);
+
+        lblidpersona2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        lblidpersona2.setText("jLabel1");
+        escritorio.add(lblidpersona2);
+        lblidpersona2.setBounds(0, 360, 130, 16);
+
+        mnusisreserva.setBackground(new java.awt.Color(255, 255, 255));
+        mnusisreserva.setForeground(new java.awt.Color(18, 18, 18));
+        mnusisreserva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-casa-26.png"))); // NOI18N
         mnusisreserva.setMnemonic('f');
-        mnusisreserva.setText("Sisreserva");
+        mnusisreserva.setText("   Inicio");
+        mnusisreserva.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnusisreserva.setPreferredSize(new java.awt.Dimension(120, 40));
         menuBar.add(mnusisreserva);
 
-        mnuarchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Archivo.png"))); // NOI18N
+        mnuarchivo.setBackground(new java.awt.Color(255, 255, 255));
+        mnuarchivo.setForeground(new java.awt.Color(18, 18, 18));
+        mnuarchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-abrir-carpeta-26.png"))); // NOI18N
         mnuarchivo.setMnemonic('e');
-        mnuarchivo.setText("Archivo");
+        mnuarchivo.setText("   Archivo");
+        mnuarchivo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnuarchivo.setPreferredSize(new java.awt.Dimension(130, 40));
 
         cutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
-        cutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/habitaciones.png"))); // NOI18N
+        cutMenuItem.setBackground(new java.awt.Color(255, 255, 255));
+        cutMenuItem.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        cutMenuItem.setForeground(new java.awt.Color(18, 18, 18));
+        cutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-dormitorio-48.png"))); // NOI18N
         cutMenuItem.setMnemonic('t');
         cutMenuItem.setText("Habitaciones");
         cutMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -99,9 +128,12 @@ public class frminicio extends javax.swing.JFrame {
         mnuarchivo.add(cutMenuItem);
 
         copyMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
-        copyMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/productos.png"))); // NOI18N
+        copyMenuItem.setBackground(new java.awt.Color(255, 255, 255));
+        copyMenuItem.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        copyMenuItem.setForeground(new java.awt.Color(18, 18, 18));
+        copyMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-caja-48.png"))); // NOI18N
         copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("productos");
+        copyMenuItem.setText("Productos");
         copyMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 copyMenuItemActionPerformed(evt);
@@ -111,12 +143,19 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(mnuarchivo);
 
-        mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Reservas.png"))); // NOI18N
+        mnureservas.setBackground(new java.awt.Color(255, 255, 255));
+        mnureservas.setForeground(new java.awt.Color(18, 18, 18));
+        mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-campana-de-servicio-30.png"))); // NOI18N
         mnureservas.setMnemonic('h');
-        mnureservas.setText("Reservas");
+        mnureservas.setText("  Reservas");
+        mnureservas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnureservas.setPreferredSize(new java.awt.Dimension(130, 40));
 
         contentMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
-        contentMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/reservas-consumos.png"))); // NOI18N
+        contentMenuItem.setBackground(new java.awt.Color(255, 255, 255));
+        contentMenuItem.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        contentMenuItem.setForeground(new java.awt.Color(18, 18, 18));
+        contentMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-reloj-40.png"))); // NOI18N
         contentMenuItem.setMnemonic('c');
         contentMenuItem.setText("Reservas y Consumos");
         contentMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -127,7 +166,9 @@ public class frminicio extends javax.swing.JFrame {
         mnureservas.add(contentMenuItem);
 
         aboutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
-        aboutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/clientes.png"))); // NOI18N
+        aboutMenuItem.setBackground(new java.awt.Color(255, 255, 255));
+        aboutMenuItem.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        aboutMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-mostrador-de-facturación-40.png"))); // NOI18N
         aboutMenuItem.setMnemonic('a');
         aboutMenuItem.setText("Clientes");
         aboutMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -137,23 +178,28 @@ public class frminicio extends javax.swing.JFrame {
         });
         mnureservas.add(aboutMenuItem);
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/pagos.png"))); // NOI18N
-        jMenuItem1.setText("Pagos");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        mnureservas.add(jMenuItem1);
-
         menuBar.add(mnureservas);
 
-        mnuconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Configuraciones.png"))); // NOI18N
-        mnuconfiguraciones.setText("Configuraciones");
+        jMenu1.setBackground(new java.awt.Color(255, 255, 255));
+        jMenu1.setForeground(new java.awt.Color(18, 18, 18));
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-historial-de-pagos-30.png"))); // NOI18N
+        jMenu1.setText("  Pagos");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jMenu1.setPreferredSize(new java.awt.Dimension(130, 40));
+        menuBar.add(jMenu1);
+
+        mnuconfiguraciones.setBackground(new java.awt.Color(255, 255, 255));
+        mnuconfiguraciones.setForeground(new java.awt.Color(18, 18, 18));
+        mnuconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-servicios-32.png"))); // NOI18N
+        mnuconfiguraciones.setText("  Configuraciones");
+        mnuconfiguraciones.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnuconfiguraciones.setPreferredSize(new java.awt.Dimension(300, 40));
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/trabajadores.png"))); // NOI18N
+        jMenuItem2.setBackground(new java.awt.Color(255, 255, 255));
+        jMenuItem2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jMenuItem2.setForeground(new java.awt.Color(18, 18, 18));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-administrador-del-hombre-48.png"))); // NOI18N
         jMenuItem2.setText("Usuarios y Accesos");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,8 +210,12 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(mnuconfiguraciones);
 
-        mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/Salir.png"))); // NOI18N
-        mnusalir.setText("Salir");
+        mnusalir.setBackground(new java.awt.Color(255, 255, 255));
+        mnusalir.setForeground(new java.awt.Color(18, 18, 18));
+        mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-cerrar-ventana-26.png"))); // NOI18N
+        mnusalir.setText("  Salir");
+        mnusalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnusalir.setPreferredSize(new java.awt.Dimension(100, 40));
         mnusalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mnusalirMouseClicked(evt);
@@ -179,11 +229,13 @@ public class frminicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 850, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 912, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 453, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -238,14 +290,6 @@ public class frminicio extends javax.swing.JFrame {
         frmreserva.idusuario=Integer.parseInt(lblidpersona.getText());
     }//GEN-LAST:event_contentMenuItemActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-//        frmPago form =new frmPago();
-//        escritorio.add(form);
-//        form.toFront();
-//        form.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -287,12 +331,15 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
     public static javax.swing.JDesktopPane escritorio;
-    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem2;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblamaterno;
     public static javax.swing.JLabel lblapaterno;
     public static javax.swing.JLabel lblidpersona;
+    public static javax.swing.JLabel lblidpersona1;
+    public static javax.swing.JLabel lblidpersona2;
     public static javax.swing.JLabel lblnombre;
     private javax.swing.JMenuBar menuBar;
     public static javax.swing.JMenu mnuarchivo;
