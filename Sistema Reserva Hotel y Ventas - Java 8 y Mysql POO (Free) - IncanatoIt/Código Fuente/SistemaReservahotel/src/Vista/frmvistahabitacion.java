@@ -104,7 +104,7 @@ public class frmvistahabitacion extends javax.swing.JFrame {
         txtbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtbuscar.setForeground(new java.awt.Color(18, 18, 18));
 
-        btnbuscar.setBackground(new java.awt.Color(18, 18, 18));
+        btnbuscar.setBackground(new java.awt.Color(255, 255, 255));
         btnbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnbuscar.setForeground(new java.awt.Color(18, 18, 18));
         btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-búsqueda.png"))); // NOI18N
@@ -119,7 +119,7 @@ public class frmvistahabitacion extends javax.swing.JFrame {
         lbltotalregistros.setForeground(new java.awt.Color(0, 153, 191));
         lbltotalregistros.setText("Registros");
 
-        jButton1.setBackground(new java.awt.Color(18, 18, 18));
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(18, 18, 18));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-página-principal.png"))); // NOI18N

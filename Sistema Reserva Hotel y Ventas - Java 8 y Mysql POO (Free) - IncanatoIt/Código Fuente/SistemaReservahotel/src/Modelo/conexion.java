@@ -17,8 +17,8 @@ public class conexion {
     public String db="basereserva";
     public String url="jdbc:mysql://127.0.0.1/" +db;
     public String user="root";
-    //public String pass="2908";//RicardoPC
-    public String pass="1234";//MarcosyDianaPc
+    public String pass="2908";//RicardoPC
+//    public String pass="1234";//MarcosyDianaPc
 
     public conexion() {
     }

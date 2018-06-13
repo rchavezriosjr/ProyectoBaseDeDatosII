@@ -203,7 +203,7 @@ public static String cliente;
             }
         });
 
-        btnnuevo.setBackground(new java.awt.Color(18, 18, 18));
+        btnnuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnnuevo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnnuevo.setForeground(new java.awt.Color(18, 18, 18));
         btnnuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-agregar-propiedad.png"))); // NOI18N
@@ -214,7 +214,7 @@ public static String cliente;
             }
         });
 
-        btnguardar.setBackground(new java.awt.Color(18, 18, 18));
+        btnguardar.setBackground(new java.awt.Color(255, 255, 255));
         btnguardar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnguardar.setForeground(new java.awt.Color(18, 18, 18));
         btnguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-guardar.png"))); // NOI18N
@@ -225,7 +225,7 @@ public static String cliente;
             }
         });
 
-        btncancelar.setBackground(new java.awt.Color(18, 18, 18));
+        btncancelar.setBackground(new java.awt.Color(255, 255, 255));
         btncancelar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btncancelar.setForeground(new java.awt.Color(18, 18, 18));
         btncancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-llenaron-cancelar-16.png"))); // NOI18N
@@ -343,7 +343,6 @@ public static String cliente;
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtprecio_venta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel6)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cboesado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
@@ -383,7 +382,7 @@ public static String cliente;
         });
         jScrollPane3.setViewportView(tablalistado);
 
-        btneliminar.setBackground(new java.awt.Color(18, 18, 18));
+        btneliminar.setBackground(new java.awt.Color(255, 255, 255));
         btneliminar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btneliminar.setForeground(new java.awt.Color(18, 18, 18));
         btneliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-eliminar.png"))); // NOI18N
@@ -394,7 +393,7 @@ public static String cliente;
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(18, 18, 18));
+        btnsalir.setBackground(new java.awt.Color(255, 255, 255));
         btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnsalir.setForeground(new java.awt.Color(18, 18, 18));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-página-principal.png"))); // NOI18N

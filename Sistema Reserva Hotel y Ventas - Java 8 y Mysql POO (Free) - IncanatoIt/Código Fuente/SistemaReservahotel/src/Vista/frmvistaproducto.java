@@ -97,7 +97,7 @@ void mostrar(String buscar) {
         txtbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtbuscar.setForeground(new java.awt.Color(18, 18, 18));
 
-        btnbuscar.setBackground(new java.awt.Color(51, 51, 51));
+        btnbuscar.setBackground(new java.awt.Color(255, 255, 255));
         btnbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnbuscar.setForeground(new java.awt.Color(18, 18, 18));
         btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-búsqueda.png"))); // NOI18N
@@ -108,7 +108,7 @@ void mostrar(String buscar) {
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(18, 18, 18));
+        btnsalir.setBackground(new java.awt.Color(255, 255, 255));
         btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnsalir.setForeground(new java.awt.Color(18, 18, 18));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-página-principal.png"))); // NOI18N

@@ -59,8 +59,7 @@ public class frmusuariologin extends javax.swing.JFrame {
             }
         });
 
-        btningresar.setBackground(new java.awt.Color(51, 0, 0));
-        btningresar.setForeground(new java.awt.Color(255, 255, 255));
+        btningresar.setBackground(new java.awt.Color(255, 255, 255));
         btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/guardar.png"))); // NOI18N
         btningresar.setText("Ingresar");
         btningresar.addActionListener(new java.awt.event.ActionListener() {
@@ -69,8 +68,7 @@ public class frmusuariologin extends javax.swing.JFrame {
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(51, 0, 0));
-        btnsalir.setForeground(new java.awt.Color(255, 255, 255));
+        btnsalir.setBackground(new java.awt.Color(255, 255, 255));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/salir.gif"))); // NOI18N
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
@@ -78,6 +76,8 @@ public class frmusuariologin extends javax.swing.JFrame {
                 btnsalirActionPerformed(evt);
             }
         });
+
+        jScrollPane1.setEnabled(false);
 
         tablalistado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

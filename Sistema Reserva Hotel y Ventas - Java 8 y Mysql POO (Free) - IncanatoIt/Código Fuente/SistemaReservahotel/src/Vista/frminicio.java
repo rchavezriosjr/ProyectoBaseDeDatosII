@@ -7,6 +7,7 @@
 package Vista;
 
 import Files.ImagenFondo;
+import javax.swing.JFrame;
 
 
 public class frminicio extends javax.swing.JFrame {
@@ -18,6 +19,7 @@ public class frminicio extends javax.swing.JFrame {
         initComponents();
         escritorio.setBorder(new ImagenFondo());
         this.setExtendedState(frminicio.NORMAL);
+        
         this.setTitle("Sistema de Reserva de Habitaciones y Gestión de ventas - Hotel Paraíso");
     }
 
@@ -44,13 +46,15 @@ public class frminicio extends javax.swing.JFrame {
         mnureservas = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
         mnuconfiguraciones = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         mnusalir = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1280, 720));
+        setAlwaysOnTop(true);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(1280, 768));
+        setPreferredSize(new java.awt.Dimension(1280, 768));
         setResizable(false);
 
         escritorio.setBackground(new java.awt.Color(255, 255, 255));
@@ -59,27 +63,27 @@ public class frminicio extends javax.swing.JFrame {
         lblidpersona.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblidpersona.setText("jLabel1");
         escritorio.add(lblidpersona);
-        lblidpersona.setBounds(10, 640, 50, 16);
+        lblidpersona.setBounds(10, 590, 50, 16);
 
         lblnombre.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblnombre.setText("jLabel2");
         escritorio.add(lblnombre);
-        lblnombre.setBounds(70, 640, 130, 16);
+        lblnombre.setBounds(70, 590, 130, 16);
 
         lblapaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblapaterno.setText("jLabel3");
         escritorio.add(lblapaterno);
-        lblapaterno.setBounds(70, 660, 130, 16);
+        lblapaterno.setBounds(70, 610, 130, 16);
 
         lblamaterno.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblamaterno.setText("jLabel4");
         escritorio.add(lblamaterno);
-        lblamaterno.setBounds(70, 680, 130, 16);
+        lblamaterno.setBounds(70, 630, 130, 16);
 
         lblacceso.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         lblacceso.setText("jLabel7");
         escritorio.add(lblacceso);
-        lblacceso.setBounds(70, 700, 130, 16);
+        lblacceso.setBounds(70, 650, 130, 16);
 
         mnusisreserva.setBackground(new java.awt.Color(255, 255, 255));
         mnusisreserva.setForeground(new java.awt.Color(18, 18, 18));
@@ -165,14 +169,6 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(mnureservas);
 
-        jMenu1.setBackground(new java.awt.Color(255, 255, 255));
-        jMenu1.setForeground(new java.awt.Color(18, 18, 18));
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-historial-de-pagos-30.png"))); // NOI18N
-        jMenu1.setText("  Pagos");
-        jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jMenu1.setPreferredSize(new java.awt.Dimension(130, 40));
-        menuBar.add(jMenu1);
-
         mnuconfiguraciones.setBackground(new java.awt.Color(255, 255, 255));
         mnuconfiguraciones.setForeground(new java.awt.Color(18, 18, 18));
         mnuconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-servicios-32.png"))); // NOI18N
@@ -199,7 +195,9 @@ public class frminicio extends javax.swing.JFrame {
         mnusalir.setForeground(new java.awt.Color(18, 18, 18));
         mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-cerrar-ventana-26.png"))); // NOI18N
         mnusalir.setText("  Salir");
+        mnusalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         mnusalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        mnusalir.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         mnusalir.setPreferredSize(new java.awt.Dimension(100, 40));
         mnusalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -222,6 +220,7 @@ public class frminicio extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
@@ -282,6 +281,9 @@ public class frminicio extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        
+//        JFrame frminicio = new JFrame();
+//        frminicio.setUndecorated(true);
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -304,6 +306,7 @@ public class frminicio extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new frminicio().setVisible(true);
+                
             }
         });
     }
@@ -314,7 +317,6 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
     public static javax.swing.JDesktopPane escritorio;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem2;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblamaterno;

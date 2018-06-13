@@ -236,7 +236,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
             }
         });
 
-        btnnuevo.setBackground(new java.awt.Color(18, 18, 18));
+        btnnuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnnuevo.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnnuevo.setForeground(new java.awt.Color(18, 18, 18));
         btnnuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-agregar-propiedad.png"))); // NOI18N
@@ -247,7 +247,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
             }
         });
 
-        btnguardar.setBackground(new java.awt.Color(18, 18, 18));
+        btnguardar.setBackground(new java.awt.Color(255, 255, 255));
         btnguardar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnguardar.setForeground(new java.awt.Color(18, 18, 18));
         btnguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-guardar.png"))); // NOI18N
@@ -258,7 +258,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
             }
         });
 
-        btncancelar.setBackground(new java.awt.Color(18, 18, 18));
+        btncancelar.setBackground(new java.awt.Color(255, 255, 255));
         btncancelar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btncancelar.setForeground(new java.awt.Color(18, 18, 18));
         btncancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-llenaron-cancelar-16.png"))); // NOI18N
@@ -381,7 +381,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
         txtbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txtbuscar.setForeground(new java.awt.Color(18, 18, 18));
 
-        btnbuscar.setBackground(new java.awt.Color(18, 18, 18));
+        btnbuscar.setBackground(new java.awt.Color(255, 255, 255));
         btnbuscar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnbuscar.setForeground(new java.awt.Color(18, 18, 18));
         btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-búsqueda.png"))); // NOI18N
@@ -392,7 +392,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
             }
         });
 
-        btneliminar.setBackground(new java.awt.Color(18, 18, 18));
+        btneliminar.setBackground(new java.awt.Color(255, 255, 255));
         btneliminar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btneliminar.setForeground(new java.awt.Color(18, 18, 18));
         btneliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-eliminar.png"))); // NOI18N
@@ -403,7 +403,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
             }
         });
 
-        btnsalir.setBackground(new java.awt.Color(18, 18, 18));
+        btnsalir.setBackground(new java.awt.Color(255, 255, 255));
         btnsalir.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnsalir.setForeground(new java.awt.Color(18, 18, 18));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-página-principal.png"))); // NOI18N
@@ -418,7 +418,7 @@ public class frmhabitacion extends javax.swing.JInternalFrame {
         lbltotalregistros.setForeground(new java.awt.Color(255, 255, 255));
         lbltotalregistros.setText("Registros");
 
-        btnReporte.setBackground(new java.awt.Color(18, 18, 18));
+        btnReporte.setBackground(new java.awt.Color(255, 255, 255));
         btnReporte.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnReporte.setForeground(new java.awt.Color(18, 18, 18));
         btnReporte.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-report-card-16.png"))); // NOI18N
