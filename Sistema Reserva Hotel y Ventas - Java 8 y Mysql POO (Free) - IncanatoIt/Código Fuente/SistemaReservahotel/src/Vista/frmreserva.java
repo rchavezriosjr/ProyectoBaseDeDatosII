@@ -860,7 +860,8 @@ public class frmreserva extends javax.swing.JInternalFrame {
 
     private void btnverconsumoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnverconsumoActionPerformed
         // TODO add your handling code here:
-        int fila = tablalistado.getSelectedRow();
+        try {
+            int fila = tablalistado.getSelectedRow();
         frmConsumo.idreserva= tablalistado.getValueAt(fila, 0).toString();
         frmConsumo.cliente=tablalistado.getValueAt(fila, 4).toString();
         
@@ -869,6 +870,11 @@ public class frmreserva extends javax.swing.JInternalFrame {
         frminicio.escritorio.add(form);
         form.toFront();
         form.setVisible(true);
+        } catch (Exception e) 
+        {
+            JOptionPane.showMessageDialog(rootPane,"Seleccione un cliente por favor","Error",JOptionPane.ERROR_MESSAGE);
+        }
+        
     }//GEN-LAST:event_btnverconsumoActionPerformed
 
     private void btnrealizarpagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrealizarpagosActionPerformed

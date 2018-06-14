@@ -141,7 +141,6 @@ public class frminicio extends javax.swing.JFrame {
         mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-campana-de-servicio-30.png"))); // NOI18N
         mnureservas.setMnemonic('h');
         mnureservas.setText(" Reservas");
-        mnureservas.setActionCommand(" Reservas");
         mnureservas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mnureservas.setPreferredSize(new java.awt.Dimension(135, 40));
 
