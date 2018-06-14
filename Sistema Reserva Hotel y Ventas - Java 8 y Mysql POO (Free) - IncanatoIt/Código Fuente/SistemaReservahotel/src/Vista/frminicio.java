@@ -48,12 +48,14 @@ public class frminicio extends javax.swing.JFrame {
         aboutMenuItem = new javax.swing.JMenuItem();
         mnuconfiguraciones = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
         mnusalir = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(1280, 768));
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1280, 768));
         setResizable(false);
 
@@ -85,11 +87,13 @@ public class frminicio extends javax.swing.JFrame {
         escritorio.add(lblacceso);
         lblacceso.setBounds(70, 650, 130, 16);
 
+        menuBar.setBackground(new java.awt.Color(255, 255, 255));
+
         mnusisreserva.setBackground(new java.awt.Color(255, 255, 255));
         mnusisreserva.setForeground(new java.awt.Color(18, 18, 18));
         mnusisreserva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-casa-26.png"))); // NOI18N
         mnusisreserva.setMnemonic('f');
-        mnusisreserva.setText("   Inicio");
+        mnusisreserva.setText(" Inicio");
         mnusisreserva.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mnusisreserva.setPreferredSize(new java.awt.Dimension(120, 40));
         menuBar.add(mnusisreserva);
@@ -98,7 +102,7 @@ public class frminicio extends javax.swing.JFrame {
         mnuarchivo.setForeground(new java.awt.Color(18, 18, 18));
         mnuarchivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-abrir-carpeta-26.png"))); // NOI18N
         mnuarchivo.setMnemonic('e');
-        mnuarchivo.setText("   Archivo");
+        mnuarchivo.setText(" Archivos");
         mnuarchivo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         mnuarchivo.setPreferredSize(new java.awt.Dimension(130, 40));
 
@@ -136,9 +140,10 @@ public class frminicio extends javax.swing.JFrame {
         mnureservas.setForeground(new java.awt.Color(18, 18, 18));
         mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-campana-de-servicio-30.png"))); // NOI18N
         mnureservas.setMnemonic('h');
-        mnureservas.setText("  Reservas");
+        mnureservas.setText(" Reservas");
+        mnureservas.setActionCommand(" Reservas");
         mnureservas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        mnureservas.setPreferredSize(new java.awt.Dimension(130, 40));
+        mnureservas.setPreferredSize(new java.awt.Dimension(135, 40));
 
         contentMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
         contentMenuItem.setBackground(new java.awt.Color(255, 255, 255));
@@ -172,9 +177,9 @@ public class frminicio extends javax.swing.JFrame {
         mnuconfiguraciones.setBackground(new java.awt.Color(255, 255, 255));
         mnuconfiguraciones.setForeground(new java.awt.Color(18, 18, 18));
         mnuconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-servicios-32.png"))); // NOI18N
-        mnuconfiguraciones.setText("  Configuraciones");
+        mnuconfiguraciones.setText(" Configuraciones");
         mnuconfiguraciones.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        mnuconfiguraciones.setPreferredSize(new java.awt.Dimension(300, 40));
+        mnuconfiguraciones.setPreferredSize(new java.awt.Dimension(200, 40));
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem2.setBackground(new java.awt.Color(255, 255, 255));
@@ -191,14 +196,18 @@ public class frminicio extends javax.swing.JFrame {
 
         menuBar.add(mnuconfiguraciones);
 
+        jMenu1.setEnabled(false);
+        jMenu1.setPreferredSize(new java.awt.Dimension(999, 20));
+        menuBar.add(jMenu1);
+
         mnusalir.setBackground(new java.awt.Color(255, 255, 255));
         mnusalir.setForeground(new java.awt.Color(18, 18, 18));
         mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-cerrar-ventana-26.png"))); // NOI18N
-        mnusalir.setText("  Salir");
         mnusalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         mnusalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        mnusalir.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        mnusalir.setPreferredSize(new java.awt.Dimension(100, 40));
+        mnusalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mnusalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        mnusalir.setPreferredSize(new java.awt.Dimension(40, 40));
         mnusalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mnusalirMouseClicked(evt);
@@ -212,11 +221,13 @@ public class frminicio extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, 1280, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, 731, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -317,6 +328,7 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyMenuItem;
     private javax.swing.JMenuItem cutMenuItem;
     public static javax.swing.JDesktopPane escritorio;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem2;
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblamaterno;
