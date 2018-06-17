@@ -49,8 +49,7 @@ FROM
      INNER JOIN `pago` pago ON reserva.`idreserva` = pago.`idreserva`
 	INNER JOIN `consumo` consumo on reserva.`idreserva` = consumo.`idreserva`
 INNER JOIN `producto` producto on consumo.`idproducto` = producto.`idproducto`
-where pago.`idpago`=$P{idpago}
-]]>
+where pago.`idpago`=$P{idpago}]]>
 	</queryString>
 	<field name="cliente" class="java.lang.String"/>
 	<field name="persona_num_documento" class="java.lang.String"/>
@@ -73,37 +72,33 @@ where pago.`idpago`=$P{idpago}
 	</background>
 	<title>
 		<band height="113" splitType="Stretch">
-			<image>
-				<reportElement x="16" y="11" width="109" height="76" uuid="250f3c96-9d5f-4959-bde3-dfe6c3c141b1"/>
-				<imageExpression><![CDATA["logo.jpg"]]></imageExpression>
-			</image>
 			<staticText>
 				<reportElement x="140" y="21" width="129" height="33" forecolor="#FF0000" uuid="3d0a1640-6114-4a39-9fef-099d55b67b5e"/>
 				<textElement>
 					<font size="20" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Hotel Paraíso]]></text>
+				<text><![CDATA[Hotelito]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="282" y="21" width="77" height="33" forecolor="#009999" uuid="acd4339f-f0cc-49c5-bfcb-446aa122b922"/>
 				<textElement>
 					<font size="20" isBold="true"/>
 				</textElement>
-				<text><![CDATA[S.A.C.]]></text>
+				<text><![CDATA[]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="140" y="54" width="219" height="20" uuid="bc171e47-98c4-4655-8f78-f07ee986529c"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Ca. José Gálvez 1368]]></text>
+				<text><![CDATA[Masaya, Nicaragua]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="140" y="74" width="300" height="20" uuid="d885d2db-c654-4066-9ce5-c276c580412d"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Teléfono: 979026684  www.hotelparaiso.info]]></text>
+				<text><![CDATA[Teléfono: 81234567  www.hotelito.com.ni]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="581" y="11" width="203" height="43" forecolor="#3300FF" uuid="37268098-f609-49bb-a56e-c94aa6ad55f0"/>
@@ -119,6 +114,10 @@ where pago.`idpago`=$P{idpago}
 				</textElement>
 				<textFieldExpression><![CDATA[$F{pago_num_comprobante}]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="8" y="17" width="125" height="79" uuid="60418f8f-317a-4ddf-95c8-0723cd52baf3"/>
+				<imageExpression><![CDATA["C:\\Users\\rchav\\Documents\\ProyectoBaseDeDatosII\\Sistema Reserva Hotel y Ventas - Java 8 y Mysql POO (Free) - IncanatoIt\\Código Fuente\\SistemaReservahotel\\logo.jpg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
