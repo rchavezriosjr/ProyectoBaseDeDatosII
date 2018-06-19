@@ -24,6 +24,7 @@ public class frmusuariologin extends javax.swing.JFrame {
        this.setTitle("Acceso al Sistema");
        this.setLocationRelativeTo(null);
        jScrollPane1.setVisible(false);
+       txtusuario.requestFocus();
     }
 
     /**

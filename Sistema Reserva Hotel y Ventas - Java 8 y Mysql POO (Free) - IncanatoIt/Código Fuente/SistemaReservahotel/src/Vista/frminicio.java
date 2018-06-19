@@ -201,12 +201,13 @@ public class frminicio extends javax.swing.JFrame {
 
         mnusalir.setBackground(new java.awt.Color(255, 255, 255));
         mnusalir.setForeground(new java.awt.Color(18, 18, 18));
-        mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-cerrar-ventana-26.png"))); // NOI18N
+        mnusalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8-exportar-26.png"))); // NOI18N
         mnusalir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         mnusalir.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        mnusalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        mnusalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        mnusalir.setPreferredSize(new java.awt.Dimension(40, 40));
+        mnusalir.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        mnusalir.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        mnusalir.setIconTextGap(12);
+        mnusalir.setPreferredSize(new java.awt.Dimension(50, 40));
         mnusalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 mnusalirMouseClicked(evt);
@@ -269,6 +270,8 @@ public class frminicio extends javax.swing.JFrame {
     private void mnusalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mnusalirMouseClicked
         // TODO add your handling code here:
         this.dispose();
+        frmusuariologin log = new frmusuariologin();
+        log.show();
     }//GEN-LAST:event_mnusalirMouseClicked
 
     private void contentMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contentMenuItemActionPerformed
